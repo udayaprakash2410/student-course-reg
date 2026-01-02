@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Course Registration Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Header -->
+  <h1 class="shine-text">Student Course Registration Portal</h1>
+
+  <!-- Registration Form -->
+  <div class="card">
+    <h3>Register Student</h3>
+    <form id="courseForm">
+      <input type="text" id="name" placeholder="Student Name">
+      <input type="email" id="email" placeholder="Email">
+
+      <!--course-->
+  <h2 style="background-color: black; color: aliceblue;; text-align: center;">Course</h2>
+
+      <!-- Custom Multi-select -->
+      <div class="custom-select" id="courseSelect">
+        <div class="option">HTML</div>
+        <div class="option">CSS</div>
+        <div class="option">JavaScript</div>
+        <div class="option">Python</div>
+        <div class="option">Java</div>
+      </div>
+
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search student by name">
+
+
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Courses</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="result"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
